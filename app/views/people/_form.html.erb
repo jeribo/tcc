@@ -1,0 +1,21 @@
+<%- model_class = Person.new.class -%>
+<%= simple_form_for(@person, :html => {:class => 'form-horizontal' }) do |f| %>  
+  <div class="form-inputs">
+    <fieldset>
+      <%= f.input :name %>
+      <%= f.input :last_name %>
+      <%= f.input :type_person, :collection => [:individual, :corporation], :prompt => true %>
+      <%= f.input :federal_reg %>
+      <%= f.input :state_reg %>
+      <%= f.input :email_person %>
+      <%= f.input :born %>
+      <%= f.input :phone_1 %>
+      <%= f.input :phone_2 %>
+      <%= f.input :active %>
+    </fieldset>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

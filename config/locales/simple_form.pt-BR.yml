@@ -1,0 +1,7 @@
+pt-BR:
+  simple_form:
+    options:
+      person:
+        type_person:
+          individual: 'Física'
+          corporation: 'Jurídica'

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Type address:</b>
+  <%= @placement.type_address %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @placement.address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @placement.city %>
+</p>
+
+<p>
+  <b>District:</b>
+  <%= @placement.district %>
+</p>
+
+<p>
+  <b>Complement:</b>
+  <%= @placement.complement %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= @placement.zip %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @placement.state %>
+</p>
+
+<p>
+  <b>Person:</b>
+  <%= @placement.person %>
+</p>
+
+
+<%= link_to 'Edit', edit_placement_path(@placement) %> |
+<%= link_to 'Back', placements_path %>

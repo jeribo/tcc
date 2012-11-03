@@ -1,0 +1,28 @@
+<%- model_class = Person.new.class -%>
+<h2><%= t(".title") %></h2>
+
+<div class="row">
+  <b><%= model_class.human_attribute_name(:id) %>:</b>
+  <%= @person.id %>
+</div>
+
+<div class="row">
+  <b><%= model_class.human_attribute_name(:name) %>:</b>
+  <%= @person.full_name %>
+</div>
+
+<div class="row">
+  <b><%= model_class.human_attribute_name(:born) %>:</b>
+  <%=l @person.born, format: :long %>
+</div>
+<div class="actions-bar">
+  <%= link_to 'Edit', edit_person_path(@person) %> |
+  <%= link_to 'Back', people_path %>
+</div>
+<div id="placements_list">
+  <%= render :partial => "placements/placement_list" %>
+</div>
+
+<div id="insert_placement">
+  <%= render :partial => 'placements/form' %>
+</div>

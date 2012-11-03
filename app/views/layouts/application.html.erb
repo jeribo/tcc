@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= t("site_name") %></title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="#">
+        <%= t("site_name") %>
+      </a>
+      <%= navigation_links %>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <%= yield %>
+</div>
+<% if user_signed_in? -%>
+  <div id="user_login_box" style="float:right">
+    <%= current_user.email %> |
+    <%= link_to 'My info', edit_user_registration_path %> |
+    <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
+  </div>
+<% end -%>
+<div style="clear:both"></div>
+<div class="form-actions">
+  <%= language_links %>
+</div>
+</body>
+</html>

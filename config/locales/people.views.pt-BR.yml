@@ -1,0 +1,12 @@
+pt-BR:
+  people:
+    new:
+      title: Incluir Pessoa
+      submit: Enviar Dados
+    edit:
+      title: Atualizar Pessoa
+      update: Atualizar
+    show:
+      title: Mostrar Dados Pessoas
+      
+

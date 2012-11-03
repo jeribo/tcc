@@ -1,0 +1,14 @@
+pt-BR:
+  hello: Olá Mundo
+  site_name: "Plutos - Controle Financeiro"
+  translation:
+    en: English
+    pt-BR: Português
+  admin:
+    title: "Administração"
+  articles:
+    title: "Artigos"
+  placement:
+    title: "Locais"
+  people:
+    title: "Pessoas"    

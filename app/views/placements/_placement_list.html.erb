@@ -1,0 +1,32 @@
+<%- model_class = Placement.new.class -%>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:type_address) %></th>
+      <th><%= model_class.human_attribute_name(:address) %></th>
+      <th><%= model_class.human_attribute_name(:city) %></th>
+      <th><%= model_class.human_attribute_name(:district) %></th>
+      <th><%= model_class.human_attribute_name(:complement) %></th>
+      <th><%= model_class.human_attribute_name(:zip) %></th>
+      <th><%= model_class.human_attribute_name(:state) %></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @person.placements.each do |placement| %>
+      <tr>
+        <td><%= placement.type_address %></td>
+        <td><%= placement.address %></td>
+        <td><%= placement.city %></td>
+        <td><%= placement.district %></td>
+        <td><%= placement.complement %></td>
+        <td><%= placement.zip %></td>
+        <td><%= placement.state %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
