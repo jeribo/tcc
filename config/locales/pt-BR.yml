@@ -1,5 +1,5 @@
 pt-BR:
-  hello: Olá Mundo
+  hello: Início
   site_name: "Plutos - Controle Financeiro"
   translation:
     en: English
@@ -8,7 +8,11 @@ pt-BR:
     title: "Administração"
   articles:
     title: "Artigos"
-  placement:
+  placements:
     title: "Locais"
+  placement:
+    title: "Local"
   people:
-    title: "Pessoas"    
+    title: "Pessoas"
+  person:
+    title: "Pessoa"

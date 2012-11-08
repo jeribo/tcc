@@ -5,3 +5,8 @@ pt-BR:
         type_person:
           individual: 'Física'
           corporation: 'Jurídica'
+      placement:
+        type_address:
+          Home: 'Casa'
+          Officce: 'Escritório'
+          Contact: 'Contato'

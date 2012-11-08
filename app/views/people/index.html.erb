@@ -20,13 +20,13 @@
       <tr>
         <td><%= person.id %></td>
         <td><%= person.full_name %></td>
-        <td><%= person.type_person %></td>
+        <td><%= t(person.type_person) %></td>
         <td><%= person.federal_reg %></td>
         <td><%= person.state_reg %></td>
         <td><%=l person.born, format: :default %></td>
-        <td><%= link_to 'Show', person %></td>
-        <td><%= link_to 'Edit', edit_person_path(person) %></td>
-        <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', person, :class => 'btn btn-small' %></td>
+        <td><%= link_to 'Edit', edit_person_path(person), :class => 'btn btn-small' %></td>
+        <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +34,4 @@
 
 <br />
 
-<%= link_to 'New Person', new_person_path %>
+<%= link_to 'New Person', new_person_path, :class => "btn" %>

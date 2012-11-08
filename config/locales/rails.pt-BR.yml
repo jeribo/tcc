@@ -235,3 +235,11 @@ pt-BR:
         phone_2: "Telefone Secundário"
         active: "Ativo?"
         type_person: "Tipo Pessoa"
+      placements:
+        type_address: "Tipo Endereço"
+        address: "Endereço"
+        city: "Cidade"
+        district: "Bairro/Distrito"
+        complement: "Complemento"
+        zip: "CEP"
+        state: "Estado"

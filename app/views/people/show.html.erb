@@ -15,14 +15,11 @@
   <b><%= model_class.human_attribute_name(:born) %>:</b>
   <%=l @person.born, format: :long %>
 </div>
-<div class="actions-bar">
-  <%= link_to 'Edit', edit_person_path(@person) %> |
-  <%= link_to 'Back', people_path %>
+<div class="btn-group">
+  <%= link_to 'Edit', edit_person_path(@person), :class => "btn" %> |
+  <%= link_to 'Back', people_path, :class => "btn" %>
 </div>
 <div id="placements_list">
   <%= render :partial => "placements/placement_list" %>
 </div>
-
-<div id="insert_placement">
-  <%= render :partial => 'placements/form' %>
-</div>
+<%= link_to 'New Placement', new_person_placement_path(@person, :format => :js), :remote => true, :id => 'new_placement_link',:class => "btn" %>

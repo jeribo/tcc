@@ -1,31 +1,14 @@
-<%= simple_form_for([@person,@person.placements.build], :html => {:class => 'form-horizontal' }, :remote => true) do |f| %>
-  <div class="field">
-    <%= f.label :type_address %><br />
-    <%= f.text_field :type_address %>
-  </div>
-  <div class="field">
-    <%= f.label :address %><br />
-    <%= f.text_field :address %>
-  </div>
-  <div class="field">
-    <%= f.label :city %><br />
-    <%= f.text_field :city %>
-  </div>
-  <div class="field">
-    <%= f.label :district %><br />
-    <%= f.text_field :district %>
-  </div>
-  <div class="field">
-    <%= f.label :complement %><br />
-    <%= f.text_field :complement %>
-  </div>
-  <div class="field">
-    <%= f.label :zip %><br />
-    <%= f.text_field :zip %>
-  </div>
-  <div class="field">
-    <%= f.label :state %><br />
-    <%= f.text_field :state %>
+<%= simple_form_for([@person,@person.placements.build], :html => {:id => "new_placement", :class => 'form-horizontal', :style => 'display: none;' }, :remote => true) do |f| %>
+  <div class="form-imputs">
+    <fieldset class="well">
+      <%= f.input :type_address, :class=> "combobox", :collection => [:Home, :Officce, :Contact], :prompt => true %>
+      <%= f.input :address %>
+      <%= f.input :city %>
+      <%= f.input :district %>
+      <%= f.input :complement %>
+      <%= f.input :zip %>
+      <%= f.input :state %>
+    </fieldset>
   </div>
   <div class="actions">
     <%= f.submit %>

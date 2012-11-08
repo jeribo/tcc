@@ -19,7 +19,10 @@ class PlacementsController < ApplicationController
  def destroy
     @placement = @person.placements.find(params[:id])
     @placement.destroy
-    redirect_to @person, :notice => 'Placement Deleted'
+    respond_to do |format|
+      format.html { redirect_to @person, :notice => 'Placement Deleted'}
+      format.js
+    end    
   end
   private
     def load_person
