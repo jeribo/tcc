@@ -1,0 +1,10 @@
+pt-BR:
+  placements:
+    new:
+      title: Incluir Local
+      submit: Enviar Dados
+    edit:
+      title: Atualizar Locais
+      update: Atualizar
+    show:
+      title: Listar Locais
